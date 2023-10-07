@@ -42,6 +42,32 @@ public class MainActivity extends AppCompatActivity {
                 normalDialog.show();
             }
         });
+        Button btnJump2 = (Button) findViewById(R.id.btn2_jump);
+        btnJump2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final AlertDialog.Builder normalDialog2 =
+                        new AlertDialog.Builder(MainActivity.this);
+                normalDialog2.setTitle("Continue Jump to the Other Activity");
+                normalDialog2.setPositiveButton("YES",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent intent = new Intent(MainActivity.this, CounterActivity.class);
+                                startActivity(intent);
+                            }
+                        });
+                normalDialog2.setNegativeButton("NO",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                // do nothing
+                            }
+                        });
+                // display the AlertDialog
+                normalDialog2.show();
+            }
+        });
 
     }
 }

@@ -26,6 +26,10 @@
             android:name=".SecondActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".CounterActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>

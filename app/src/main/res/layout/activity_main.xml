@@ -22,4 +22,12 @@
         android:text="Second Activity"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn2_jump"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Counter"
+        android:textAllCaps="false" />
+
 </LinearLayout>

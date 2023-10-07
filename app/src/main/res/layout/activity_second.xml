@@ -17,4 +17,12 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/btn"
+        android:text="@string/hide"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false" />
+
 </LinearLayout>
